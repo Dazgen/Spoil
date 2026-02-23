@@ -557,7 +557,7 @@
 			<spoil>
 				<item id="735" min="1" max="1" chance="1.9993" /> <!-- Potion of Alacrity -->
 				<item id="1800" min="1" max="1" chance="7.5446" /> <!-- Recipe: Piece Bone Breastplate -->
-				<item id="1872" min="1" max="3" chance="31.989" /> <!-- Animal Bone -->
+				<item id="1872" min="1" max="1" chance="31.989" /> <!-- Animal Bone -->
 			</spoil>
 		</dropLists>
 		<collision>
@@ -1568,8 +1568,8 @@
 			</drop>
 			<spoil>
 				<item id="1792" min="1" max="1" chance="1.6716" /> <!-- Recipe: Short Spear -->
-				<item id="1865" min="1" max="2" chance="22.7339" /> <!-- Varnish -->
-				<item id="1869" min="1" max="3" chance="22.7339" /> <!-- Iron Ore -->
+				<item id="1865" min="1" max="1" chance="22.7339" /> <!-- Varnish -->
+				<item id="1869" min="1" max="1" chance="22.7339" /> <!-- Iron Ore -->
 			</spoil>
 		</dropLists>
 		<collision>
@@ -5212,8 +5212,8 @@
 			</drop>
 			<spoil>
 				<item id="1792" min="1" max="1" chance="1.8424" /> <!-- Recipe: Short Spear -->
-				<item id="1871" min="1" max="3" chance="25.0564" /> <!-- Charcoal -->
-				<item id="1872" min="1" max="2" chance="33.4085" /> <!-- Animal Bone -->
+				<item id="1871" min="1" max="1" chance="25.0564" /> <!-- Charcoal -->
+				<item id="1872" min="1" max="1" chance="33.4085" /> <!-- Animal Bone -->
 			</spoil>
 		</dropLists>
 		<collision>

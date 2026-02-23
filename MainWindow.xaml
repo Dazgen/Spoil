@@ -20,8 +20,9 @@
 
         <DataGrid x:Name="NpcGrid" Grid.Row="1" Margin="8" AutoGenerateColumns="False"
                   ItemsSource="{Binding Npcs}"
-                  IsReadOnly="True" CanUserSortColumns="True" RowDetailsVisibilityMode="VisibleWhenSelected"
-                  SelectionMode="Single">
+                  IsReadOnly="True" CanUserSortColumns="True" RowDetailsVisibilityMode="Collapsed"
+                  SelectionMode="Single"
+                  PreviewMouseLeftButtonDown="NpcGrid_PreviewMouseLeftButtonDown">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Id" Binding="{Binding Id}" SortMemberPath="Id" />
                 <DataGridTextColumn Header="Name" Binding="{Binding Name}" SortMemberPath="Name" />

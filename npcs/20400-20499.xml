@@ -275,7 +275,7 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1871" min="1" max="2" chance="33.948" /> <!-- Charcoal -->
+				<item id="1871" min="1" max="1" chance="33.948" /> <!-- Charcoal -->
 				<item id="1880" min="1" max="1" chance="3.3948" /> <!-- Steel -->
 				<item id="2179" min="1" max="1" chance="16.2431" /> <!-- Recipe: Crafted Leather Gloves -->
 			</spoil>
@@ -2118,7 +2118,7 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1869" min="1" max="2" chance="31.512" /> <!-- Iron Ore -->
+				<item id="1869" min="1" max="1" chance="31.512" /> <!-- Iron Ore -->
 				<item id="1898" min="1" max="1" chance="3.237" /> <!-- Blue Diamond Necklace Gem -->
 				<item id="2016" min="1" max="1" chance="0.3693" /> <!-- Composition Bow Shaft -->
 			</spoil>
@@ -2308,8 +2308,8 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1865" min="1" max="2" chance="37.5763" /> <!-- Varnish -->
-				<item id="1869" min="1" max="2" chance="37.5763" /> <!-- Iron Ore -->
+				<item id="1865" min="1" max="1" chance="37.5763" /> <!-- Varnish -->
+				<item id="1869" min="1" max="1" chance="37.5763" /> <!-- Iron Ore -->
 				<item id="1899" min="1" max="1" chance="5.8713" /> <!-- Necklace of Devotion Chain -->
 			</spoil>
 		</dropLists>
@@ -3716,7 +3716,7 @@
 			<spoil>
 				<item id="1800" min="1" max="1" chance="6.5776" /> <!-- Recipe: Piece Bone Breastplate -->
 				<item id="1865" min="1" max="1" chance="20.9166" /> <!-- Varnish -->
-				<item id="1872" min="1" max="2" chance="27.8888" /> <!-- Animal Bone -->
+				<item id="1872" min="1" max="1" chance="27.8888" /> <!-- Animal Bone -->
 			</spoil>
 		</dropLists>
 		<collision>
@@ -4389,8 +4389,8 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1864" min="1" max="2" chance="42.6554" /> <!-- Stem -->
-				<item id="1867" min="1" max="2" chance="28.437" /> <!-- Animal Skin -->
+				<item id="1864" min="1" max="1" chance="42.6554" /> <!-- Stem -->
+				<item id="1867" min="1" max="1" chance="28.437" /> <!-- Animal Skin -->
 				<item id="1922" min="1" max="1" chance="5.4407" /> <!-- Leather Tunic Pattern -->
 			</spoil>
 		</dropLists>
@@ -5585,7 +5585,7 @@
 			</drop>
 			<spoil>
 				<item id="25" min="1" max="1" chance="0.1492" /> <!-- Piece Bone Breastplate -->
-				<item id="1865" min="1" max="2" chance="23.7307" /> <!-- Varnish -->
+				<item id="1865" min="1" max="1" chance="23.7307" /> <!-- Varnish -->
 				<item id="1879" min="1" max="1" chance="3.9551" /> <!-- Cokes -->
 			</spoil>
 		</dropLists>
@@ -6007,7 +6007,7 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1870" min="1" max="2" chance="68.5215" /> <!-- Coal -->
+				<item id="1870" min="1" max="1" chance="68.5215" /> <!-- Coal -->
 				<item id="1880" min="1" max="1" chance="6.8521" /> <!-- Steel -->
 				<item id="2017" min="1" max="1" chance="0.9106" /> <!-- Saber Blade -->
 			</spoil>

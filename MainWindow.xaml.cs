@@ -161,14 +161,27 @@ public partial class MainWindow : Window
                                         if (idAttr == null) continue;
                                         var comment = itemElem.NodesAfterSelf().OfType<XComment>().FirstOrDefault();
                                         var itemName = comment?.Value.Trim();
-                                        if (!string.IsNullOrEmpty(itemName))
-                                        {
-                                            discoveredItems[(int)idAttr] = itemName;
-                                            if (npc.DropLists?.Spoil?.Items != null)
+                                            if (!string.IsNullOrEmpty(itemName))
                                             {
-                                                foreach (var si in npc.DropLists.Spoil.Items.Where(x => x.Id == idAttr))
-                                                    si.Name = itemName;
-                                            }
+                                                discoveredItems[(int)idAttr] = itemName;
+                                                if (npc.DropLists?.Spoil?.Items != null)
+                                                {
+                                                    foreach (var si in npc.DropLists.Spoil.Items.Where(x => x.Id == idAttr))
+                                                    {
+                                                        // assign the item name to the spoil item (no asterisk on item)
+                                                        si.Name = itemName;
+
+                                                        // if this spoil item can drop more than 1 (min>1 or max>1),
+                                                        // mark the NPC name with a trailing '*' (avoid duplicates)
+                                                        if ((si.Min > 1) || (si.Max > 1))
+                                                        {
+                                                            if (!string.IsNullOrEmpty(npc.Name) && !npc.Name.EndsWith("*"))
+                                                            {
+                                                                npc.Name += "*";
+                                                            }
+                                                        }
+                                                    }
+                                                }
                                             if (npc.DropLists?.Drop != null)
                                             {
                                                 foreach (var drop in npc.DropLists.Drop)
@@ -304,18 +317,7 @@ public partial class MainWindow : Window
             npc.TotalValue = total;
             npc.TotalSpoil = spoilTotal;
             npc.TotalWealth = total + spoilTotal;
-        }
-
-        // save updated itemValues to file
-        try
-        {
-            var json = JsonSerializer.Serialize(itemValues, new JsonSerializerOptions { WriteIndented = true });
-            File.WriteAllText(_itemsFilePath, json);
-        }
-        catch (Exception ex)
-        {
-            MessageBox.Show($"Failed to save item values: {ex.Message}");
-        }
+        }        
 
         // sort by TotalWealth desc
         var sorted = Npcs.OrderByDescending(n => n.TotalWealth).ToList();
@@ -331,6 +333,27 @@ public partial class MainWindow : Window
         LoadAndPopulate();
     }
 
-    // Double-click handling removed. Row details are visible when the row is selected
-    // to avoid collapsing details when interacting with inner controls.
+    // single-click on a row toggles its details; ignore clicks that originate
+    // from inside the RowDetails area so inner interactions don't collapse the row
+    private void NpcGrid_PreviewMouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+    {
+        var src = e.OriginalSource as DependencyObject;
+        while (src != null)
+        {
+            // if click happened inside row details area, ignore
+            // avoid direct type reference to DataGridRowDetailsPresenter (prevents XAML/code-gen issues)
+            var t = src.GetType();
+            if (string.Equals(t.Name, "DataGridRowDetailsPresenter", StringComparison.Ordinal))
+                return;
+
+            // if we reached the row itself, toggle details
+            if (src is DataGridRow row)
+            {
+                row.DetailsVisibility = row.DetailsVisibility == Visibility.Visible ? Visibility.Collapsed : Visibility.Visible;
+                return;
+            }
+
+            src = System.Windows.Media.VisualTreeHelper.GetParent(src);
+        }
+    }
 }
