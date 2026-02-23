@@ -37,29 +37,37 @@
                     <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
                         <StackPanel Margin="8">
                             <TextBlock FontWeight="Bold" Text="Drops:" />
+                            <!-- drop -> groups -> items -->
                             <ItemsControl ItemsSource="{Binding DropLists.Drop}">
                                 <ItemsControl.ItemTemplate>
                                     <DataTemplate>
-                                        <Border Margin="4" Background="#FFF2F2F2">
-                                            <StackPanel Margin="6">
-                                                <TextBlock Text="Group" FontWeight="Bold" />
-                                                <TextBlock Text="{Binding Chance, StringFormat=Chance: {0}}" />
-                                            <ItemsControl ItemsSource="{Binding Items}">
-                                                <ItemsControl.ItemTemplate>
-                                                    <DataTemplate>
-                                                        <StackPanel Orientation="Horizontal">
-                                                            <TextBlock Width="60" Text="{Binding Id, StringFormat=Id: {0}}" />
-                                                            <TextBlock Width="300" Text="{Binding Name, StringFormat=Name: {0}}" />
-                                                            <TextBlock Width="120" Text="{Binding Chance, StringFormat=Chance: {0}}" />
-                                                            <TextBlock Width="120" Text="{Binding Min, StringFormat=Min: {0}}" />
-                                                            <TextBlock Width="120" Text="{Binding Max, StringFormat=Max: {0}}" />
-                                                            <TextBlock Width="120" Text="{Binding Value, StringFormat=Value: {0:N2}}" />
+                                        <!-- this DataContext is a Drop; iterate its Groups -->
+                                        <ItemsControl ItemsSource="{Binding Groups}">
+                                            <ItemsControl.ItemTemplate>
+                                                <DataTemplate>
+                                                    <Border Margin="4" Background="#FFF2F2F2">
+                                                        <StackPanel Margin="6">
+                                                            <TextBlock Text="Group" FontWeight="Bold" />
+                                                            <TextBlock Text="{Binding Chance, StringFormat=Chance: {0}}" />
+                                                            <ItemsControl ItemsSource="{Binding Items}">
+                                                                <ItemsControl.ItemTemplate>
+                                                                    <DataTemplate>
+                                                                        <StackPanel Orientation="Horizontal">
+                                                                            <TextBlock Width="60" Text="{Binding Id, StringFormat=Id: {0}}" />
+                                                                            <TextBlock Width="300" Text="{Binding Name, StringFormat=Name: {0}}" />
+                                                                            <TextBlock Width="120" Text="{Binding Chance, StringFormat=Chance: {0}}" />
+                                                                            <TextBlock Width="120" Text="{Binding Min, StringFormat=Min: {0}}" />
+                                                                            <TextBlock Width="120" Text="{Binding Max, StringFormat=Max: {0}}" />
+                                                                            <TextBlock Width="120" Text="{Binding Value, StringFormat=Value: {0:N2}}" />
+                                                                        </StackPanel>
+                                                                    </DataTemplate>
+                                                                </ItemsControl.ItemTemplate>
+                                                            </ItemsControl>
                                                         </StackPanel>
-                                                    </DataTemplate>
-                                                </ItemsControl.ItemTemplate>
-                                            </ItemsControl>
-                                            </StackPanel>
-                                        </Border>
+                                                    </Border>
+                                                </DataTemplate>
+                                            </ItemsControl.ItemTemplate>
+                                        </ItemsControl>
                                     </DataTemplate>
                                 </ItemsControl.ItemTemplate>
                             </ItemsControl>
@@ -75,6 +83,19 @@
                                             <TextBlock Width="120" Text="{Binding Min, StringFormat=Min: {0}}" />
                                             <TextBlock Width="120" Text="{Binding Max, StringFormat=Max: {0}}" />
                                             <TextBlock Width="120" Text="{Binding Value, StringFormat=Value: {0:N2}}" />
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+
+                            <TextBlock FontWeight="Bold" Margin="8,12,0,0" Text="Skills:" />
+                            <ItemsControl ItemsSource="{Binding SkillList.Skills}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" Margin="2">
+                                            <TextBlock Width="80" Text="{Binding Id, StringFormat=Skill Id: {0}}" />
+                                            <TextBlock Width="220" Text="{Binding Name, StringFormat=Name: {0}}" />
+                                            <TextBlock Width="120" Text="{Binding Level, StringFormat=Level: {0}}" />
                                         </StackPanel>
                                     </DataTemplate>
                                 </ItemsControl.ItemTemplate>

@@ -197,6 +197,10 @@ public class Skill
 
     [XmlAttribute("level")]
     public int Level { get; set; }
+
+    // Populated from XML comments (e.g. <!-- NPC Heal -->)
+    [XmlIgnore]
+    public string? Name { get; set; }
 }
 
 public class Shots

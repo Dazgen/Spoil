@@ -7,6 +7,7 @@ using System.Text.Json;
 using System.Windows;
 using System.Windows.Controls;
 using System.Xml.Linq;
+using System.Text.RegularExpressions;
 using System.Xml.Serialization;
 
 namespace L2_Calc;
@@ -131,6 +132,26 @@ public partial class MainWindow : Window
                                     }
                                 }
 
+                                // process skillList comments: <skill id="..." level="..." /> <!-- Skill Name -->
+                                var skillListElem = npcElem.Element("skillList");
+                                if (skillListElem != null && npc.SkillList?.Skills != null)
+                                {
+                                    foreach (var skillElem in skillListElem.Elements("skill"))
+                                    {
+                                        var idAttr = (int?)skillElem.Attribute("id");
+                                        var levelAttr = (int?)skillElem.Attribute("level");
+                                        if (idAttr == null) continue;
+                                        var comment = skillElem.NodesAfterSelf().OfType<XComment>().FirstOrDefault();
+                                        var skillName = comment?.Value.Trim();
+                                        if (string.IsNullOrEmpty(skillName)) continue;
+
+                                        foreach (var sk in npc.SkillList.Skills.Where(s => s.Id == idAttr && s.Level == levelAttr))
+                                        {
+                                            sk.Name = skillName;
+                                        }
+                                    }
+                                }
+
                                 var spoilElem = dropListsElem.Element("spoil");
                                 if (spoilElem != null)
                                 {
@@ -232,6 +253,52 @@ public partial class MainWindow : Window
                     sitem.Value = contribution;
                     spoilTotal += contribution;
                 }
+            }
+
+            // If NPC has skills that indicate a multiplier in their name (e.g. "HP Increase (2x)")
+            // use those multipliers as divisors for the calculated values.
+            double divisor = 1.0;
+            if (npc.SkillList?.Skills != null)
+            {
+                foreach (var sk in npc.SkillList.Skills)
+                {
+                    if (string.IsNullOrEmpty(sk.Name))
+                        continue;
+                    var m = Regex.Match(sk.Name, "\\((\\d+)x\\)", RegexOptions.IgnoreCase);
+                    if (m.Success && int.TryParse(m.Groups[1].Value, out var mult) && mult > 0)
+                    {
+                        divisor *= mult;
+                    }
+                }
+            }
+
+            if (divisor > 1.0)
+            {
+                // scale per-item values as well so UI remains consistent
+                if (npc.DropLists?.Drop != null)
+                {
+                    foreach (var drop in npc.DropLists.Drop)
+                    {
+                        if (drop?.Groups == null) continue;
+                        foreach (var grp in drop.Groups)
+                        {
+                            if (grp?.Items == null) continue;
+                            foreach (var item in grp.Items)
+                            {
+                                item.Value /= divisor;
+                            }
+                        }
+                    }
+                }
+
+                if (npc.DropLists?.Spoil?.Items != null)
+                {
+                    foreach (var sitem in npc.DropLists.Spoil.Items)
+                        sitem.Value /= divisor;
+                }
+
+                total /= divisor;
+                spoilTotal /= divisor;
             }
 
             npc.TotalValue = total;
