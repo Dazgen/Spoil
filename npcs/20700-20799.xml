@@ -1479,7 +1479,7 @@
 			</drop>
 			<spoil>
 				<item id="951" min="1" max="1" chance="0.3046" /> <!-- Scroll: Enchant Weapon (Grade C) -->
-				<item id="1871" min="1" max="5" chance="83.7724" /> <!-- Charcoal -->
+				<item id="1871" min="1" max="3" chance="83.7724" /> <!-- Charcoal -->
 				<item id="1911" min="1" max="1" chance="12.4615" /> <!-- Earring of Protection Gemstone -->
 			</spoil>
 		</dropLists>
@@ -1947,7 +1947,7 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1869" min="1" max="3" chance="87.6362" /> <!-- Iron Ore -->
+				<item id="1869" min="1" max="1" chance="87.6362" /> <!-- Iron Ore -->
 				<item id="1901" min="1" max="1" chance="12.1045" /> <!-- Tiger's Eye Earring Stone -->
 				<item id="2154" min="1" max="1" chance="9.3829" /> <!-- Recipe: Elven Earring -->
 			</spoil>
@@ -4432,8 +4432,8 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1877" min="1" max="2" chance="5.8846" /> <!-- Adamantite Nugget -->
-				<item id="1881" min="1" max="2" chance="19.6153" /> <!-- Coarse Bone Powder -->
+				<item id="1877" min="1" max="1" chance="5.8846" /> <!-- Adamantite Nugget -->
+				<item id="1881" min="1" max="1" chance="19.6153" /> <!-- Coarse Bone Powder -->
 				<item id="2037" min="1" max="1" chance="1.4892" /> <!-- Heavy Bone Club Head -->
 			</spoil>
 		</dropLists>

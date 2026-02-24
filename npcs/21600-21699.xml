@@ -785,7 +785,7 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1871" min="1" max="5" chance="77.7719" /> <!-- Charcoal -->
+				<item id="1871" min="1" max="3" chance="77.7719" /> <!-- Charcoal -->
 				<item id="1879" min="1" max="1" chance="25.924" /> <!-- Cokes -->
 				<item id="1906" min="1" max="1" chance="21.3806" /> <!-- Mithril Ring Wire -->
 			</spoil>
@@ -861,7 +861,7 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1869" min="1" max="7" chance="94.6366" /> <!-- Iron Ore -->
+				<item id="1869" min="1" max="5" chance="94.6366" /> <!-- Iron Ore -->
 				<item id="2163" min="1" max="1" chance="14.4852" /> <!-- Recipe: Earring of Protection -->
 				<item id="4043" min="1" max="1" chance="9.4637" /> <!-- Asofe -->
 			</spoil>
@@ -3875,7 +3875,7 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1870" min="1" max="2" chance="59.7803" /> <!-- Coal -->
+				<item id="1870" min="1" max="1" chance="59.7803" /> <!-- Coal -->
 				<item id="2029" min="1" max="1" chance="0.7131" /> <!-- Gastraphetes Shaft -->
 				<item id="5549" min="1" max="1" chance="5.978" /> <!-- Metallic Thread -->
 			</spoil>
@@ -6285,7 +6285,7 @@
 			</drop>
 			<spoil>
 				<item id="1865" min="1" max="7" chance="72.6143" /> <!-- Varnish -->
-				<item id="1870" min="1" max="6" chance="72.6143" /> <!-- Coal -->
+				<item id="1870" min="1" max="7" chance="72.6143" /> <!-- Coal -->
 				<item id="2029" min="1" max="1" chance="3.4646" /> <!-- Gastraphetes Shaft -->
 			</spoil>
 		</dropLists>
@@ -7223,7 +7223,7 @@
 			</drop>
 			<spoil>
 				<item id="1867" min="1" max="5" chance="78.8384" /> <!-- Animal Skin -->
-				<item id="1872" min="1" max="4" chance="78.8384" /> <!-- Animal Bone -->
+				<item id="1872" min="1" max="5" chance="78.8384" /> <!-- Animal Bone -->
 				<item id="6036" min="1" max="1" chance="5.9129" /> <!-- Greater Magic Haste Potion -->
 			</spoil>
 		</dropLists>
@@ -7728,7 +7728,7 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1894" min="1" max="2" chance="18.506" /> <!-- Crafted Leather -->
+				<item id="1894" min="1" max="1" chance="18.506" /> <!-- Crafted Leather -->
 				<item id="1962" min="1" max="1" chance="16.8775" /> <!-- Karmian Tunic Pattern -->
 				<item id="2215" min="1" max="1" chance="6.7188" /> <!-- Recipe: Robe of Seal -->
 			</spoil>

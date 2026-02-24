@@ -5803,7 +5803,7 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1864" min="1" max="7" chance="89.2175" /> <!-- Stem -->
+				<item id="1864" min="1" max="5" chance="89.2175" /> <!-- Stem -->
 				<item id="1869" min="1" max="3" chance="66.9131" /> <!-- Iron Ore -->
 				<item id="1901" min="1" max="1" chance="18.4843" /> <!-- Tiger's Eye Earring Stone -->
 			</spoil>
@@ -5912,8 +5912,8 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1864" min="1" max="16" chance="86.1782" /> <!-- Stem -->
-				<item id="1869" min="1" max="7" chance="77.5604" /> <!-- Iron Ore -->
+				<item id="1864" min="1" max="17" chance="86.1782" /> <!-- Stem -->
+				<item id="1869" min="1" max="9" chance="77.5604" /> <!-- Iron Ore -->
 				<item id="1901" min="1" max="1" chance="53.5638" /> <!-- Tiger's Eye Earring Stone -->
 			</spoil>
 		</dropLists>

@@ -2789,7 +2789,7 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1873" min="1" max="2" chance="41.01" /> <!-- Silver Nugget -->
+				<item id="1873" min="1" max="1" chance="41.01" /> <!-- Silver Nugget -->
 				<item id="1880" min="1" max="1" chance="10.2525" /> <!-- Steel -->
 				<item id="1951" min="1" max="1" chance="5.1754" /> <!-- Plate Gaiters Part -->
 			</spoil>
@@ -7457,7 +7457,7 @@
 			</drop>
 			<spoil>
 				<item id="951" min="1" max="1" chance="0.1826" /> <!-- Scroll: Enchant Weapon (Grade C) -->
-				<item id="1876" min="1" max="2" chance="20.0889" /> <!-- Mithril Ore -->
+				<item id="1876" min="1" max="1" chance="20.0889" /> <!-- Mithril Ore -->
 				<item id="4039" min="1" max="1" chance="3.3482" /> <!-- Mold Glue -->
 			</spoil>
 		</dropLists>

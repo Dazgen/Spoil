@@ -7239,7 +7239,7 @@
 			</drop>
 			<spoil>
 				<item id="1875" min="1" max="1" chance="8.7191" /> <!-- Stone of Purity -->
-				<item id="1895" min="1" max="2" chance="37.3675" /> <!-- Metallic Fiber -->
+				<item id="1895" min="1" max="1" chance="37.3675" /> <!-- Metallic Fiber -->
 				<item id="2149" min="1" max="1" chance="9.3419" /> <!-- Recipe: Metallic Fiber -->
 			</spoil>
 		</dropLists>

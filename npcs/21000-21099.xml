@@ -1540,7 +1540,7 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1869" min="1" max="2" chance="67.5737" /> <!-- Iron Ore -->
+				<item id="1869" min="1" max="1" chance="67.5737" /> <!-- Iron Ore -->
 				<item id="1873" min="1" max="1" chance="27.0295" /> <!-- Silver Nugget -->
 				<item id="1940" min="1" max="1" chance="10.0856" /> <!-- Iron Boots Design -->
 			</spoil>
@@ -1646,7 +1646,7 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1870" min="1" max="2" chance="72.3751" /> <!-- Coal -->
+				<item id="1870" min="1" max="1" chance="72.3751" /> <!-- Coal -->
 				<item id="1882" min="1" max="1" chance="16.0833" /> <!-- Leather -->
 				<item id="1901" min="1" max="1" chance="9.9966" /> <!-- Tiger's Eye Earring Stone -->
 			</spoil>

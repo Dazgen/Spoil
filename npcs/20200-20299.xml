@@ -286,7 +286,7 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1872" min="1" max="3" chance="73.4933" /> <!-- Animal Bone -->
+				<item id="1872" min="1" max="1" chance="73.4933" /> <!-- Animal Bone -->
 				<item id="2154" min="1" max="1" chance="5.9015" /> <!-- Recipe: Elven Earring -->
 				<item id="2198" min="1" max="1" chance="1.1556" /> <!-- Recipe: Sage's Rag -->
 			</spoil>
@@ -1272,8 +1272,8 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1884" min="1" max="5" chance="87.8893" /> <!-- Cord -->
-				<item id="1894" min="1" max="2" chance="5.0112" /> <!-- Crafted Leather -->
+				<item id="1884" min="1" max="1" chance="87.8893" /> <!-- Cord -->
+				<item id="1894" min="1" max="1" chance="5.0112" /> <!-- Crafted Leather -->
 				<item id="2292" min="1" max="1" chance="0.7934" /> <!-- Recipe: Light Crossbow -->
 			</spoil>
 		</dropLists>
