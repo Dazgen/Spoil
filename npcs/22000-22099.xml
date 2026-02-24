@@ -4856,8 +4856,8 @@
 			</drop>
 			<spoil>
 				<item id="951" min="1" max="1" chance="0.5195" /> <!-- Scroll: Enchant Weapon (Grade C) -->
-				<item id="1876" min="1" max="3" chance="21.621" /> <!-- Mithril Ore -->
-				<item id="1968" min="1" max="2" chance="8.3717" /> <!-- Dwarven Chain Mail Shirt Material -->
+				<item id="1876" min="1" max="1" chance="21.621" /> <!-- Mithril Ore -->
+				<item id="1968" min="1" max="1" chance="8.3717" /> <!-- Dwarven Chain Mail Shirt Material -->
 			</spoil>
 		</dropLists>
 		<collision>
@@ -4954,8 +4954,8 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1539" min="1" max="2" chance="13.1157" /> <!-- Greater Healing Potion -->
-				<item id="1875" min="1" max="2" chance="9.1969" /> <!-- Stone of Purity -->
+				<item id="1539" min="1" max="1" chance="13.1157" /> <!-- Greater Healing Potion -->
+				<item id="1875" min="1" max="1" chance="9.1969" /> <!-- Stone of Purity -->
 				<item id="4601" min="1" max="1" chance="2.5142" /> <!-- Greater Dye of STR <Str+3 Con-3> -->
 			</spoil>
 		</dropLists>
@@ -5370,7 +5370,7 @@
 			<spoil>
 				<item id="2232" min="1" max="1" chance="1.6832" /> <!-- Recipe: Drake Leather Armor -->
 				<item id="1981" min="1" max="1" chance="6.578" /> <!-- Mithril Gauntlets Design -->
-				<item id="1894" min="3" max="5" chance="6.578" /> <!-- Crafted Leather -->
+				<item id="1894" min="1" max="1" chance="6.578" /> <!-- Crafted Leather -->
 			</spoil>
 		</dropLists>
 		<collision>

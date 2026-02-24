@@ -2065,7 +2065,7 @@
 			</drop>
 			<spoil>
 				<item id="1876" min="1" max="1" chance="36.623" /> <!-- Mithril Ore -->
-				<item id="1895" min="1" max="3" chance="52.3186" /> <!-- Metallic Fiber -->
+				<item id="1895" min="1" max="1" chance="52.3186" /> <!-- Metallic Fiber -->
 				<item id="2168" min="1" max="1" chance="4.6594" /> <!-- Recipe: Necklace of Mermaid -->
 			</spoil>
 		</dropLists>
@@ -3647,7 +3647,7 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1867" min="1" max="5" chance="92.3295" /> <!-- Animal Skin -->
+				<item id="1867" min="1" max="3" chance="92.3295" /> <!-- Animal Skin -->
 				<item id="2079" min="1" max="1" chance="0.9515" /> <!-- Bec De Corbin Blade -->
 				<item id="3007" min="1" max="1" chance="5.0362" /> <!-- Recipe: Theca Leather Boots -->
 			</spoil>

@@ -7969,8 +7969,8 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1880" min="1" max="2" chance="30.1213" /> <!-- Steel -->
-				<item id="2166" min="1" max="2" chance="10.2106" /> <!-- Recipe: Earrings of Binding (100%) -->
+				<item id="1880" min="1" max="1" chance="30.1213" /> <!-- Steel -->
+				<item id="2166" min="1" max="1" chance="10.2106" /> <!-- Recipe: Earrings of Binding (100%) -->
 				<item id="2951" min="1" max="1" chance="25.3333" /> <!-- Rind Leather Gloves Design -->
 			</spoil>
 		</dropLists>
@@ -8354,8 +8354,8 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1539" min="1" max="3" chance="54.3597" /> <!-- Greater Healing Potion -->
-				<item id="1875" min="1" max="2" chance="16.3079" /> <!-- Stone of Purity -->
+				<item id="1539" min="1" max="1" chance="54.3597" /> <!-- Greater Healing Potion -->
+				<item id="1875" min="1" max="1" chance="16.3079" /> <!-- Stone of Purity -->
 				<item id="4609" min="1" max="1" chance="0.5436" /> <!-- Greater Dye of MEN <Men+3 Int-3> -->
 			</spoil>
 		</dropLists>

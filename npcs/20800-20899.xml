@@ -313,7 +313,7 @@
 			<spoil>
 				<item id="4042" min="1" max="1" chance="5.7307" /> <!-- Enria -->
 				<item id="4043" min="1" max="1" chance="11.4615" /> <!-- Asofe -->
-				<item id="4044" min="1" max="3" chance="11.4615" /> <!-- Thons -->
+				<item id="4044" min="1" max="1" chance="11.4615" /> <!-- Thons -->
 			</spoil>
 		</dropLists>
 		<collision>
