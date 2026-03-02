@@ -15,6 +15,7 @@
             <TextBlock VerticalAlignment="Center" Text="Max Level:"/>
             <TextBox x:Name="MaxLevelBox" Width="60" Margin="6,0" />
             <Button x:Name="ReloadBtn" Content="Reload" Click="ReloadBtn_Click" Margin="8,0" />
+            <CheckBox x:Name="DivisorToggle" Content="Apply divisor (skills/HP)" IsChecked="True" Margin="8,0" VerticalAlignment="Center" />
             <TextBlock x:Name="StatusText" Margin="10,0" VerticalAlignment="Center" />
         </StackPanel>
 

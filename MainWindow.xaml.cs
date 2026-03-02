@@ -271,17 +271,36 @@ public partial class MainWindow : Window
             // If NPC has skills that indicate a multiplier in their name (e.g. "HP Increase (2x)")
             // use those multipliers as divisors for the calculated values.
             double divisor = 1.0;
-            if (npc.SkillList?.Skills != null)
+
+            // Only compute and apply divisor when the UI toggle is enabled
+            var applyDivisor = true;
+            try
             {
-                foreach (var sk in npc.SkillList.Skills)
+                applyDivisor = DivisorToggle?.IsChecked ?? true;
+            }
+            catch { applyDivisor = true; }
+
+            if (applyDivisor)
+            {
+                if (npc.SkillList?.Skills != null)
                 {
-                    if (string.IsNullOrEmpty(sk.Name))
-                        continue;
-                    var m = Regex.Match(sk.Name, "\\((\\d+)x\\)", RegexOptions.IgnoreCase);
-                    if (m.Success && int.TryParse(m.Groups[1].Value, out var mult) && mult > 0)
+                    foreach (var sk in npc.SkillList.Skills)
                     {
-                        divisor *= mult;
+                        if (string.IsNullOrEmpty(sk.Name))
+                            continue;
+                        var m = Regex.Match(sk.Name, "\\((\\d+)x\\)", RegexOptions.IgnoreCase);
+                        if (m.Success && int.TryParse(m.Groups[1].Value, out var mult) && mult > 0)
+                        {
+                            divisor *= mult;
+                        }
                     }
+                }
+
+                // additionally multiply divisor by the NPC HP value (if present and > 0)
+                var hp = npc.Stats?.Vitals?.Hp ?? 0.0;
+                if (hp > 0)
+                {
+                    divisor *= hp;
                 }
             }
 
