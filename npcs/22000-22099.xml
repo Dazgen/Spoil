@@ -4855,8 +4855,8 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="951" min="1" max="1" chance="0.5195" /> <!-- Scroll: Enchant Weapon (Grade C) -->
-				<item id="1876" min="1" max="1" chance="21.621" /> <!-- Mithril Ore -->
+				<item id="951" min="1" max="1" chance="0.26" /> <!-- Scroll: Enchant Weapon (Grade C) -->
+				<item id="1876" min="1" max="1" chance="28.621" /> <!-- Mithril Ore -->
 				<item id="1968" min="1" max="1" chance="8.3717" /> <!-- Dwarven Chain Mail Shirt Material -->
 			</spoil>
 		</dropLists>

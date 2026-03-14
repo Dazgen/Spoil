@@ -19,6 +19,8 @@ public partial class MainWindow : Window
     private string _baseFolder = AppContext.BaseDirectory;
     private string _itemsFilePath;
     private Dictionary<string, int> itemValues = new();
+    // If true, parse skill names for multipliers like "(2x)" and apply them as divisors.
+    public bool UseSkillMultiplier { get; set; } = true;
 
     public MainWindow()
     {
@@ -269,45 +271,26 @@ public partial class MainWindow : Window
             }
 
             // If NPC has skills that indicate a multiplier in their name (e.g. "HP Increase (2x)")
-            // use those multipliers as divisors for the calculated values.
+            // use those multipliers as divisors for the calculated values. This can be disabled
+            // via the UI toggle bound to UseSkillMultiplier.
             double divisor = 1.0;
-
-            // Only compute and apply divisor when the UI toggle is enabled
-            var applyDivisor = true;
-            try
+            if (UseSkillMultiplier && npc.SkillList?.Skills != null)
             {
-                applyDivisor = DivisorToggle?.IsChecked ?? true;
-            }
-            catch { applyDivisor = true; }
-
-            if (applyDivisor)
-            {
-                if (npc.SkillList?.Skills != null)
+                foreach (var sk in npc.SkillList.Skills)
                 {
-                    foreach (var sk in npc.SkillList.Skills)
+                    if (string.IsNullOrEmpty(sk.Name))
+                        continue;
+                    var m = Regex.Match(sk.Name, "\\((\\d+)x\\)", RegexOptions.IgnoreCase);
+                    if (m.Success && int.TryParse(m.Groups[1].Value, out var mult) && mult > 0)
                     {
-                        if (string.IsNullOrEmpty(sk.Name))
-                            continue;
-                        var m = Regex.Match(sk.Name, "\\((\\d+)x\\)", RegexOptions.IgnoreCase);
-                        if (m.Success && int.TryParse(m.Groups[1].Value, out var mult) && mult > 0)
-                        {
-                            divisor *= mult;
-                        }
+                        divisor *= mult;
                     }
                 }
-
-                // additionally multiply divisor by the NPC HP value (if present and > 0)
-                var hp = npc.Stats?.Vitals?.Hp ?? 0.0;
-                if (hp > 0)
-                {
-                    divisor *= hp;
-                }
             }
 
-            if (divisor > 1.0)
-            {
-                // scale per-item values as well so UI remains consistent
-                if (npc.DropLists?.Drop != null)
+
+            // scale per-item values as well so UI remains consistent
+            if (npc.DropLists?.Drop != null)
                 {
                     foreach (var drop in npc.DropLists.Drop)
                     {
@@ -331,7 +314,7 @@ public partial class MainWindow : Window
 
                 total /= divisor;
                 spoilTotal /= divisor;
-            }
+            
 
             npc.TotalValue = total;
             npc.TotalSpoil = spoilTotal;
