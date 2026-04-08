@@ -2012,7 +2012,7 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="947" min="1" max="1" chance="0.0977" /> <!-- Scroll: Enchant Weapon (Grade B) -->
+				<item id="947" min="1" max="1" chance="0.1165" /> <!-- Scroll: Enchant Weapon (Grade B) -->
 				<item id="4051" min="1" max="1" chance="9.4736" /> <!-- Adamantite Necklace Chain -->
 				<item id="4130" min="1" max="1" chance="3.9655" /> <!-- Recipe: Ring of Black Ore -->
 			</spoil>
@@ -3097,7 +3097,7 @@
 			</drop>
 			<spoil>
 				<item id="1876" min="1" max="1" chance="59.4082" /> <!-- Mithril Ore -->
-				<item id="1895" min="1" max="3" chance="84.8688" /> <!-- Metallic Fiber -->
+				<item id="1895" min="1" max="1" chance="84.8688" /> <!-- Metallic Fiber -->
 				<item id="4052" min="1" max="1" chance="10.5166" /> <!-- Earring of Black Ore Piece -->
 			</spoil>
 		</dropLists>
@@ -3536,7 +3536,7 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1876" min="1" max="2" chance="62.0351" /> <!-- Mithril Ore -->
+				<item id="1876" min="1" max="1" chance="62.0351" /> <!-- Mithril Ore -->
 				<item id="1877" min="1" max="1" chance="12.407" /> <!-- Adamantite Nugget -->
 				<item id="4052" min="1" max="1" chance="10.9816" /> <!-- Earring of Black Ore Piece -->
 			</spoil>
@@ -5102,7 +5102,7 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1884" min="1" max="5" chance="92.7765" /> <!-- Cord -->
+				<item id="1884" min="1" max="3" chance="92.7765" /> <!-- Cord -->
 				<item id="4080" min="1" max="1" chance="6.2023" /> <!-- Blue Wolf Gaiters Material -->
 				<item id="5460" min="1" max="1" chance="0.1648" /> <!-- Recipe: Dasparion's Staff(60%) -->
 			</spoil>
@@ -5216,7 +5216,7 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1884" min="1" max="5" chance="87.911" /> <!-- Cord -->
+				<item id="1884" min="1" max="3" chance="87.911" /> <!-- Cord -->
 				<item id="4080" min="1" max="1" chance="5.877" /> <!-- Blue Wolf Gaiters Material -->
 				<item id="5460" min="1" max="1" chance="0.1561" /> <!-- Recipe: Dasparion's Staff(60%) -->
 			</spoil>

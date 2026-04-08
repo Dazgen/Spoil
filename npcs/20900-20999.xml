@@ -3098,7 +3098,7 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1869" min="1" max="5" chance="83.0753" /> <!-- Iron Ore -->
+				<item id="1869" min="1" max="3" chance="83.0753" /> <!-- Iron Ore -->
 				<item id="4049" min="1" max="1" chance="8.715" /> <!-- Adamantite Earring Gemstone -->
 				<item id="4613" min="1" max="1" chance="0.2292" /> <!-- Greater Dye of STR <Str+4 Con-4> -->
 			</spoil>

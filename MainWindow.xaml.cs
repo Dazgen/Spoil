@@ -203,8 +203,48 @@ public partial class MainWindow : Window
                                     }
                                 }
 
-                                // apply level filter
-                                if (npc.Level >= minLevel && npc.Level <= maxLevel)
+                                // exclude certain npc types (raid bosses, treasure chests, rift monsters)
+                                var typeStr = npc.Type ?? string.Empty;
+                                var titleAttr = npcElem.Attribute("title")?.Value ?? string.Empty;
+                                var nameStr = npc.Name ?? string.Empty;
+
+                                bool isExcludedType = false;
+                                // common values observed in XML: type="RaidBoss" for raid bosses
+                                if (typeStr.Equals("RaidBoss", StringComparison.OrdinalIgnoreCase))
+                                    isExcludedType = true;
+
+                                // some files use title or name to mark raid/treasure/rift entries
+                                if (!isExcludedType)
+                                {
+                                    if (titleAttr.IndexOf("raid", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                                        titleAttr.IndexOf("treasure", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                                        titleAttr.IndexOf("rift", StringComparison.OrdinalIgnoreCase) >= 0)
+                                    {
+                                        isExcludedType = true;
+                                    }
+                                }
+
+                                if (!isExcludedType)
+                                {
+                                    if (typeStr.IndexOf("treasure", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                                        typeStr.IndexOf("chest", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                                        typeStr.IndexOf("rift", StringComparison.OrdinalIgnoreCase) >= 0)
+                                    {
+                                        isExcludedType = true;
+                                    }
+                                }
+
+                                if (!isExcludedType)
+                                {
+                                    if (nameStr.IndexOf("treasure", StringComparison.OrdinalIgnoreCase) >= 0 ||
+                                        nameStr.IndexOf("rift", StringComparison.OrdinalIgnoreCase) >= 0)
+                                    {
+                                        isExcludedType = true;
+                                    }
+                                }
+
+                                // apply level filter and add only if not excluded
+                                if (!isExcludedType && npc.Level >= minLevel && npc.Level <= maxLevel)
                                     Npcs.Add(npc);
                             }
                         }

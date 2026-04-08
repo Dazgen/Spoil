@@ -582,22 +582,19 @@
 					<item id="78" min="1" max="1" chance="33.3333" /> <!-- Great Sword -->
 					<item id="148" min="1" max="1" chance="33.3333" /> <!-- Sword of Valhalla -->
 					<item id="142" min="1" max="1" chance="33.3333" /> <!-- Keshanberk -->
-				</group>
-				<group chance="16.6772">
 					<item id="4108" min="1" max="1" chance="0.3172" /> <!-- Sword of Valhalla Blade -->
 					<item id="4107" min="1" max="1" chance="0.3172" /> <!-- Keshanberk Blade -->
 					<item id="4104" min="1" max="1" chance="0.322" /> <!-- Great Sword Blade -->
+				</group>
+				<group chance="20.5765">
 					<item id="4197" min="1" max="1" chance="0.01619" /> <!-- Recipe: Demon Dagger -->
 					<item id="4167" min="1" max="1" chance="0.40654" /> <!-- Recipe: Blue Wolf Boots -->
 					<item id="4129" min="1" max="1" chance="0.32919" /> <!-- Recipe: Earrings of Black Ore -->
-					<item id="1868" min="1" max="1" chance="66.6245" /> <!-- Thread -->
-					<item id="4042" min="1" max="1" chance="0.61761" /> <!-- Enria -->
-					<item id="1895" min="1" max="1" chance="10.163" /> <!-- Metallic Fiber -->
-					<item id="1876" min="1" max="1" chance="6.81409" /> <!-- Mithril Ore -->
-					<item id="1873" min="1" max="1" chance="13.3248" /> <!-- Silver Nugget -->
-					<item id="8728" min="1" max="1" chance="0.56065" /> <!-- Life Stone: level 61 -->
-					<item id="8738" min="1" max="1" chance="0.1625" /> <!-- Mid-Grade Life Stone: level 61 -->
-					<item id="8748" min="1" max="1" chance="0.02458" /> <!-- High-Grade Life Stone: level 61 -->
+					<item id="1868" min="1" max="1" chance="68.3432" /> <!-- Thread -->
+					<item id="4042" min="1" max="1" chance="0.5695" /> <!-- Enria -->
+					<item id="1895" min="1" max="1" chance="9.7633" /> <!-- Metallic Fiber -->
+					<item id="1876" min="1" max="1" chance="6.8343" /> <!-- Mithril Ore -->
+					<item id="1873" min="1" max="1" chance="13.6686" /> <!-- Silver Nugget -->
 				</group>
 				<group chance="42">
 					<item id="8600" min="1" max="1" chance="55" /> <!-- Herb of Life -->
@@ -629,8 +626,8 @@
 			</drop>
 			<spoil>
 				<item id="947" min="1" max="1" chance="0.0762" /> <!-- Scroll: Enchant Weapon (Grade B) -->
-				<item id="1880" min="1" max="2" chance="19.0431" /> <!-- Steel -->
-				<item id="4050" min="1" max="2" chance="11.7987" /> <!-- Adamantite Ring Wire -->
+				<item id="1880" min="1" max="1" chance="19.0431" /> <!-- Steel -->
+				<item id="4050" min="1" max="1" chance="11.7987" /> <!-- Adamantite Ring Wire -->
 			</spoil>
 		</dropLists>
 		<collision>
@@ -3589,7 +3586,7 @@
 			</drop>
 			<spoil>
 				<item id="947" min="1" max="1" chance="0.1672" /> <!-- Scroll: Enchant Weapon (Grade B) -->
-				<item id="1865" min="1" max="11" chance="83.5788" /> <!-- Varnish -->
+				<item id="1865" min="1" max="9" chance="83.5788" /> <!-- Varnish -->
 				<item id="4050" min="1" max="1" chance="25.8918" /> <!-- Adamantite Ring Wire -->
 			</spoil>
 		</dropLists>
