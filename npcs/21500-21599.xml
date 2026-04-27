@@ -791,7 +791,7 @@
 			</drop>
 			<spoil>
 				<item id="4091" min="1" max="1" chance="10.4895" /> <!-- Doom Gloves Part -->
-				<item id="4096" min="1" max="2" chance="10.4895" /> <!-- Blue Wolf Gloves Fabric -->
+				<item id="4096" min="1" max="1" chance="10.4895" /> <!-- Blue Wolf Gloves Fabric -->
 				<item id="6333" min="1" max="1" chance="2.6826" /> <!-- Recipe: Sealed Phoenix Ring(70%) -->
 			</spoil>
 		</dropLists>

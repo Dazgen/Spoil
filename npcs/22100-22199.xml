@@ -448,7 +448,7 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1875" min="1" max="2" chance="50" /> <!-- Stone of Purity -->
+				<item id="1875" min="1" max="1" chance="57.19" /> <!-- Stone of Purity -->
 				<item id="5434" min="1" max="1" chance="0.5" /> <!-- Recipe: Dragon Slayer(60%) -->
 				<item id="5478" min="1" max="2" chance="5" /> <!-- Sealed Dark Crystal Leather Armor Pattern -->
 			</spoil>
@@ -595,9 +595,9 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="729" min="1" max="1" chance="0.25" /> <!-- Scroll: Enchant Weapon (Grade A) -->
-				<item id="4039" min="1" max="2" chance="50" /> <!-- Mold Glue -->
-				<item id="4041" min="1" max="1" chance="5" /> <!-- Mold Hardener -->
+				<item id="729" min="1" max="1" chance="0.1012" /> <!-- Scroll: Enchant Weapon (Grade A) -->
+				<item id="4039" min="1" max="1" chance="30.36" /> <!-- Mold Glue -->
+				<item id="4041" min="1" max="1" chance="7.9221" /> <!-- Mold Hardener -->
 			</spoil>
 		</dropLists>
 		<collision>
@@ -981,8 +981,8 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="729" min="1" max="1" chance="0.25" /> <!-- Scroll: Enchant Weapon (Grade A) -->
-				<item id="4041" min="1" max="1" chance="20" /> <!-- Mold Hardener -->
+				<item id="729" min="1" max="1" chance="0.129" /> <!-- Scroll: Enchant Weapon (Grade A) -->
+				<item id="4041" min="1" max="1" chance="10.09" /> <!-- Mold Hardener -->
 				<item id="5478" min="1" max="1" chance="20" /> <!-- Sealed Dark Crystal Leather Armor Pattern -->
 			</spoil>
 		</dropLists>
@@ -1061,7 +1061,7 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1875" min="1" max="3" chance="80" /> <!-- Stone of Purity -->
+				<item id="1875" min="1" max="1" chance="48.55" /> <!-- Stone of Purity -->
 				<item id="3957" min="1" max="1" chance="1" /> <!-- Recipe: Blessed Spiritshot S -->
 				<item id="5522" min="1" max="1" chance="10" /> <!-- Sealed Armor of Nightmare Pattern -->
 			</spoil>
@@ -1202,8 +1202,8 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1875" min="1" max="3" chance="70" /> <!-- Stone of Purity -->
-				<item id="4041" min="1" max="1" chance="5" /> <!-- Mold Hardener -->
+				<item id="1875" min="1" max="1" chance="64.3759" /> <!-- Stone of Purity -->
+				<item id="4041" min="1" max="1" chance="8.3968" /> <!-- Mold Hardener -->
 				<item id="5488" min="1" max="1" chance="3.5" /> <!-- Sealed Majestic Robe Fabric -->
 			</spoil>
 		</dropLists>
@@ -1345,9 +1345,9 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="4043" min="1" max="1" chance="5" /> <!-- Asofe -->
+				<item id="4043" min="1" max="1" chance="34.06" /> <!-- Asofe -->
 				<item id="5502" min="1" max="1" chance="2.5" /> <!-- Sealed Boots of Nightmare Lining -->
-				<item id="5550" min="1" max="1" chance="5" /> <!-- Durable Metal Plate -->
+				<item id="5550" min="1" max="1" chance="13.62" /> <!-- Durable Metal Plate -->
 			</spoil>
 		</dropLists>
 		<collision>
@@ -2030,12 +2030,9 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="4043" min="1" max="2" chance="64.5" /> <!-- Asofe -->
-				<item id="4044" min="1" max="1" chance="5" /> <!-- Thons -->
-				<item id="5162" min="1" max="1" chance="0.5" /> <!-- Recipe: Spiritshot (S) Compressed Package (100%) -->
-				<item id="5488" min="1" max="1" chance="7.8" /> <!-- Sealed Majestic Robe Fabric -->
-				<item id="5538" min="1" max="1" chance="2.5" /> <!-- Dragon Grinder Edge -->
-				<item id="5550" min="1" max="1" chance="27" /> <!-- Durable Metal Plate -->
+				<item id="4043" min="1" max="1" chance="38.7961" /> <!-- Asofe -->				
+				<item id="5488" min="1" max="1" chance="7.8" /> <!-- Sealed Majestic Robe Fabric -->				
+				<item id="5550" min="1" max="1" chance="15.4853" /> <!-- Durable Metal Plate -->
 			</spoil>
 		</dropLists>
 		<collision>
@@ -2253,7 +2250,7 @@
 			<height normal="28.4" />
 		</collision>
 	</npc>
-	<npc id="22130" level="80" type="Monster" name="Divine Advocate">
+	<npc id="22130" level="85" type="Monster" name="Divine Advocate">
 		<parameters>
 			<param name="MoveAroundSocial" value="130" />
 			<param name="MoveAroundSocial1" value="130" />
@@ -2313,12 +2310,9 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="959" min="1" max="1" chance="0.1" /> <!-- Scroll: Enchant Weapon (Grade S) -->
-				<item id="1894" min="1" max="2" chance="73.91" /> <!-- Crafted Leather -->
-				<item id="4039" min="1" max="2" chance="68.34" /> <!-- Mold Glue -->
-				<item id="6691" min="1" max="1" chance="2.5" /> <!-- Angel Slayer Blade -->
-				<item id="6693" min="1" max="1" chance="2.5" /> <!-- Dragon Hunter Axe Blade -->
-				<item id="6901" min="1" max="1" chance="0.5" /> <!-- Recipe: Shining Arrow (100%) -->
+				<item id="959" min="1" max="1" chance="0.0719" /> <!-- Scroll: Enchant Weapon (Grade S) -->
+				<item id="1894" min="1" max="1" chance="63.1018" /> <!-- Crafted Leather -->
+				<item id="4039" min="1" max="1" chance="59.9467" /> <!-- Mold Glue -->				
 			</spoil>
 		</dropLists>
 		<collision>

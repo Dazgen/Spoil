@@ -7524,7 +7524,7 @@
 				</group>
 			</drop>
 			<spoil>
-				<item id="1875" min="1" max="2" chance="62.9418" /> <!-- Stone of Purity -->
+				<item id="1875" min="1" max="1" chance="62.9418" /> <!-- Stone of Purity -->
 				<item id="5481" min="1" max="1" chance="4.2365" /> <!-- Sealed Majestic Leather Armor Fabric -->
 				<item id="5487" min="1" max="1" chance="4.2515" /> <!-- Sealed Nightmare Robe Fabric -->
 			</spoil>
